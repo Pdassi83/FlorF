@@ -158,6 +158,10 @@ document.addEventListener("DOMContentLoaded", () => {
       carousel.addEventListener("touchstart", (e) => onDown(e.touches[0].clientX), { passive: true });
       carousel.addEventListener("touchend", (e) => onUp(e.changedTouches[0].clientX), { passive: true });
 
+      carousel.addEventListener("touchstart", stop, { passive: true });
+      carousel.addEventListener("touchend", start, { passive: true });
+
+
       // também funciona com mouse (arrastar) se quiseres
       carousel.addEventListener("mousedown", (e) => onDown(e.clientX));
       window.addEventListener("mouseup", (e) => onUp(e.clientX));
