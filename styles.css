@@ -527,4 +527,8 @@ input:focus, textarea:focus{box-shadow: 0 0 0 4px var(--ring); border-color: rgb
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  .slide--ajustada{
+  background-position: center 30%;
+}
+
 }
