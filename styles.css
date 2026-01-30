@@ -169,7 +169,7 @@ code{background:rgba(255,255,255,.06); padding:.1rem .35rem; border-radius:8px}
   align-items:center;
 }
 .brand__logo{
-  height: 40px;   /* ajusta entre 32–40px se quiseres */
+  height: 52px;   /* ajusta entre 32–40px se quiseres */
   width: auto;
   display: block;
 }
