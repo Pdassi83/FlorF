@@ -527,8 +527,12 @@ input:focus, textarea:focus{box-shadow: 0 0 0 4px var(--ring); border-color: rgb
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  .slide--ajustada{
-  background-position: center 30%;
 }
 
+/* banner gráfico */
+.carousel__slide.slide--ajustada{
+  background-position: left center;   /* mostra texto */
+  background-size: contain;           /* NÃO corta */
+  background-color: #b51f47;           /* fundo parecido */
 }
+
