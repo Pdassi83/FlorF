@@ -275,8 +275,29 @@ code{background:rgba(255,255,255,.06); padding:.1rem .35rem; border-radius:8px}
   display:block;
 }
 
-/* se ainda existir no HTML, escondemos para ficar clean */
-.hero__cardBody{display:none}
+.hero__cardBody{
+  padding: 16px;
+  display:grid;
+  gap:8px;
+}
+
+.hero__mini{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.mini{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.12);
+  font-weight:700;
+}
+.mini:hover{border-color: rgba(255,255,255,.22)}
 
 /* =========================
    Sections
