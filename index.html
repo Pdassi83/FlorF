@@ -1,176 +1,349 @@
-diff --git a/index.html b/index.html
-index 05daf7a636e3a4aadab0a615b01375c2b529885e..620f933bd2e23533c6515ca91b4957c99fe83a65 100644
---- a/index.html
-+++ b/index.html
-@@ -57,61 +57,54 @@
-   <main id="content" class="content content--locked" aria-hidden="true">
-     <!-- HERO -->
-     <section class="hero">
-       <div class="hero__bg" aria-hidden="true"></div>
-       <div class="container hero__inner">
-         <div class="hero__copy">
-           <p class="kicker">Floricultura · Raridade · Qualidade</p>
-           <h2 class="hero__title">🌹 ENTREGANDO AMOR EM FORMA DE FLORES</h2>
-           <p class="hero__lead">
-             Produção própria no Montijo — flores de corte sempre frescas, com foco em variedade e “diferentes”.
-           </p>
- 
-           <div class="hero__cta">
-                       <a class="btn btn--ghost" href="#flores">Ver flores</a>
-           </div>
- 
-           <div class="chips" aria-label="Destaques">
-             <span class="chip">🌿 Produção própria</span>
-             <span class="chip">✨ Qualidade garantida</span>
-             <span class="chip">📍 Montijo</span>
-             <span class="chip" title="Mercado Abastecedor da Região de Lisboa">🏬 MARL</span>
- 
-           </div>
-         </div>
- 
-- <div class="hero__card">
--  <div class="hero__photo">
--    <img src="assets/hero.png" alt="Flor F – Floricultura, Raridade e Qualidade">
--  </div>
--
--  <div class="hero__cardBody">
--    <h3>Contacto rápido</h3>
--    ...
--  </div>
--</div>
--
-+        <div class="hero__card">
-+          <div class="hero__photo">
-+            <img src="assets/hero.png" alt="Flor F – Floricultura, Raridade e Qualidade" loading="eager" decoding="async">
-+          </div>
- 
-           <div class="hero__cardBody">
-             <h3>Contacto rápido</h3>
-             <p class="muted">Respostas rápidas via WhatsApp.</p>
-             <div class="hero__mini">
-               <a class="mini" href="tel:+351932894111"><span aria-hidden="true">📞</span> 932 894 111</a>
-               <a class="mini" href="https://wa.me/351932894111" target="_blank" rel="noopener"><span aria-hidden="true">✅</span> WhatsApp</a>
-             </div>
-           </div>
-         </div>
-       </div>
-     </section>
- 
-     <!-- SOBRE -->
-     <section class="section" id="sobre">
-       <div class="container">
-         <div class="section__head">
-           <h2>Sobre a Flor F</h2>
-           <p class="muted">Jovem no nome. Forte no currículo.</p>
-         </div>
- 
-         <div class="grid-2">
-           <div class="card">
-             <p>
-               A Flor F apesar de jovem tem um vasto currículo na produção de flores. Situada no Montijo, cidade conhecida como
-@@ -207,51 +200,51 @@
-     <div class="carousel" aria-label="Galeria de imagens">
-       <div class="carousel__track">
-         <div class="carousel__slide" style="background-image:url('assets/jardim.jpg')"></div>
-         <div class="carousel__slide slide--ajustada" style="background-image:url('assets/festa_da_flor.jpg')"></div>
-         <div class="carousel__slide" style="background-image:url('assets/montra.png')"></div>
-         <div class="carousel__slide" style="background-image:url('assets/varias.png')"></div>
-         <div class="carousel__slide" style="background-image:url('assets/marl.png')"></div>
-       </div>
-     </div>
-   </div>
- </section>
- 
- 
-     <!-- CONTACTO -->
-     <section class="section section--soft" id="contacto">
-       <div class="container">
-         <div class="section__head">
-           <h2>Contacto</h2>
-           <p class="muted">A via mais rápida é WhatsApp. O resto também funciona.</p>
-         </div>
- 
-         <div class="grid-2">
-           <div class="card">
-             <h3>📍 Morada</h3>
-             <p>
--              Estrada de Malpique n° 80, LanÇanda — Sarilhos Grandes
-+              Estrada de Malpique n° 80, Lançanda — Sarilhos Grandes
-             </p>
-             <div class="contact-row">
-               <a class="btn btn--primary" href="https://wa.me/351932894111" target="_blank" rel="noopener">WhatsApp: 932 894 111</a>
-               <a class="btn btn--ghost" href="tel:+351932894111">Ligar</a>
-             </div>
- 
-             <div class="map-wrap" aria-label="Mapa">
-               <iframe
-                 title="Mapa — Flor F"
-                 loading="lazy"
-                 referrerpolicy="no-referrer-when-downgrade"
-                 src="https://www.google.com/maps?q=Estrada%20de%20Malpique%20n%C2%BA%2080%2C%20Lan%C3%A7anda%20-%20Sarilhos%20Grandes&output=embed">
-               </iframe>
-             </div>
- 
-             <p class="muted tiny">
-               Nota: se a rua aparecer “aproximada”, trocamos depois pelo link exato do Google Maps.
-             </p>
-           </div>
- 
-           <div class="card">
-             <h3>Mensagem rápida</h3>
-             <p class="muted">Formulário simples (sem backend). Para receber por email, liga Formspree/EmailJS depois.</p>
- 
-             <form id="contactForm" class="form">
-@@ -277,51 +270,51 @@
-         </div>
-       </div>
-     </section>
- 
-    <footer class="footer">
-   <div class="container footer__grid">
- 
-     <!-- COL 1: Marca + social -->
-     <div class="footer__col">
-       <img class="footer__logo" src="assets/logo.png" alt="Flor F" />
-       <p class="footer__desc">
-         Floricultura, raridade e qualidade. Produção própria no Montijo.<br />
-         Também no <strong>MARL</strong>.
-       </p>
- 
-       <div class="footer__social" aria-label="Redes sociais">
-         <a class="footer__icon" href="https://www.instagram.com/flor_fmontijo" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-         <!-- Se tiveres mais redes, duplica: -->
-         <!-- <a class="footer__icon" href="#" target="_blank" rel="noopener">FB</a> -->
-       </div>
-     </div>
- 
-     <!-- COL 2: Contactos -->
-     <div class="footer__col">
-       <h4>Contacte-nos</h4>
--      <p><strong>Morada:</strong><br>Estrada de Malpique Nº 80, LanÃ§anda - Sarilhos Grandes</p>
-+      <p><strong>Morada:</strong><br>Estrada de Malpique Nº 80, Lançanda - Sarilhos Grandes</p>
-       <a href="tel:+351932894111"><strong>Telefone:</strong> 932 894 111</a>
-       <a href="https://wa.me/351932894111" target="_blank" rel="noopener"><strong>WhatsApp:</strong> Abrir conversa</a>
-     </div>
- 
-     <!-- COL 3: Links úteis -->
-     <div class="footer__col">
-       <h4>Links úteis</h4>
-       <a href="#flores">Flores</a>
-       <a href="#galeria">Galeria</a>
-       <a href="#contacto">Contacto</a>
-       <a href="https://www.instagram.com/flor_fmontijo" target="_blank" rel="noopener">Instagram</a>
-     </div>
- 
-   </div>
- 
-   <div class="container footer__bottom">
-     <div class="footer__legal">
-       <a href="#" class="footer__legalLink">FAQs</a>
-       <span class="footer__sep">|</span>
-       <a href="#" class="footer__legalLink">Termos</a>
-       <span class="footer__sep">|</span>
-       <a href="#" class="footer__legalLink">Privacidade</a>
-       <span class="footer__sep">|</span>
-       <a href="#" class="footer__legalLink">Cookies</a>
-       <span class="footer__sep">|</span>
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flor F — Produtor de Flores (Montijo)</title>
+  <meta name="description" content="Flor F — Floricultura, raridade e qualidade. Produção própria no Montijo. Contacte-nos via WhatsApp." />
+  <meta name="theme-color" content="#2E7D32" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Unlock Overlay -->
+  <div id="unlockOverlay" class="overlay" aria-hidden="false">
+    <div class="overlay__inner">
+      <div class="sunflower-wrap">
+        <button id="sunflowerBtn" class="sunflower" aria-label="Entrar no site (clique no girassol)">
+          <span class="sunflower__core" aria-hidden="true"></span>
+          <span class="sunflower__petals" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <h1 class="overlay__title">Gira girassol!</h1>
+     
+    </div>
+
+    <div class="overlay__bg" aria-hidden="true"></div>
+  </div>
+
+  <!-- Floating WhatsApp -->
+  <a class="wa-float" href="https://wa.me/351932894111" target="_blank" rel="noopener">
+    <span class="wa-float__icon" aria-hidden="true">💬</span>
+    <span class="wa-float__text">WhatsApp</span>
+  </a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+     <a class="brand" href="#top" aria-label="Flor F – Início">
+  <img
+    src="assets/logo.png"
+    alt="Flor F – Floricultura, Raridade e Qualidade"
+    class="brand__logo"
+  >
+</a>
+
+      <nav class="nav" aria-label="Navegação principal">
+       
+      </nav>
+
+      <a class="btn btn--primary" href="#contacto">Contactar</a>
+    </div>
+  </header>
+
+  <main id="content" class="content content--locked" aria-hidden="true">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="kicker">Floricultura · Raridade · Qualidade</p>
+          <h2 class="hero__title">🌹 ENTREGANDO AMOR EM FORMA DE FLORES</h2>
+          <p class="hero__lead">
+            Produção própria no Montijo — flores de corte sempre frescas, com foco em variedade e “diferentes”.
+          </p>
+
+          <div class="hero__cta">
+                      <a class="btn btn--ghost" href="#flores">Ver flores</a>
+          </div>
+
+          <div class="chips" aria-label="Destaques">
+            <span class="chip">🌿 Produção própria</span>
+            <span class="chip">✨ Qualidade garantida</span>
+            <span class="chip">📍 Montijo</span>
+            <span class="chip" title="Mercado Abastecedor da Região de Lisboa">🏬 MARL</span>
+
+          </div>
+        </div>
+
+ <div class="hero__card">
+  <div class="hero__photo">
+    <img src="assets/hero.png" alt="Flor F – Floricultura, Raridade e Qualidade">
+  </div>
+
+  <div class="hero__cardBody">
+    <h3>Contacto rápido</h3>
+    ...
+  </div>
+</div>
+
+
+          <div class="hero__cardBody">
+            <h3>Contacto rápido</h3>
+            <p class="muted">Respostas rápidas via WhatsApp.</p>
+            <div class="hero__mini">
+              <a class="mini" href="tel:+351932894111"><span aria-hidden="true">📞</span> 932 894 111</a>
+              <a class="mini" href="https://wa.me/351932894111" target="_blank" rel="noopener"><span aria-hidden="true">✅</span> WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head">
+          <h2>Sobre a Flor F</h2>
+          <p class="muted">Jovem no nome. Forte no currículo.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <p>
+              A Flor F apesar de jovem tem um vasto currículo na produção de flores. Situada no Montijo, cidade conhecida como
+              terra de flores, onde existe um clima temperado, um solo bem drenado apropriado a este tipo de cultura.
+              Pelo que podemos garantir uma grande qualidade no nosso produto.
+            </p>
+            <p>
+              A nossa empresa começou como muitas outras no nosso país: familiar. Actualmente temos alargado os nossos horizontes,
+              investimos em melhores estruturas tanto para a produção como para a comercialização das nossas flores.
+            </p>
+            <p>
+              Tentamos ao longo dos anos responder às necessidades do nosso mercado, reforçando a aposta em flores “diferentes”.
+              Produzimos uma grande variedade de flores de corte, sempre frescas e de produção própria.
+            </p>
+            <p>
+             Para além da produção própria no Montijo, a Flor F tem presença no <strong>MARL</strong>, garantindo variedade, escala e disponibilidade diária.
+              </p>
+
+          </div>
+
+          <div class="card card--accent">
+            <h3>O que podes esperar</h3>
+            <ul class="list">
+              <li><span class="dot" aria-hidden="true"></span> Flores de corte frescas (produção própria)</li>
+              <li><span class="dot" aria-hidden="true"></span> Variedade e raridades (quando a época deixa)</li>
+              <li><span class="dot" aria-hidden="true"></span> Qualidade consistente (não é sorte, é processo)</li>
+              <li><span class="dot" aria-hidden="true"></span> Parcerias com floristas e encomendas por contacto</li>
+              <li><span class="dot" aria-hidden="true"></span> Levantamento local / coordenação de entrega</li>
+            </ul>
+
+            <div class="card__cta">
+              <a class="btn btn--primary" href="https://wa.me/351932894111" target="_blank" rel="noopener">Pedir disponibilidade</a>
+              <a class="btn btn--ghost" href="#contacto">Ver morada</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLORES -->
+    <section class="section section--soft" id="flores">
+      <div class="container">
+        <div class="section__head">
+          <h2>Flores (exemplos)</h2>
+          
+        </div>
+
+        <div class="cards">
+          <article class="flower">
+            <div class="flower__img" style="background-image:url('assets/rosas.jpg')"></div>
+            <div class="flower__body">
+              <h3>Rosas</h3>
+              <p class="muted">Clássico que nunca falha. Vários tons conforme disponibilidade.</p>
+            </div>
+          </article>
+
+          <article class="flower">
+            <div class="flower__img" style="background-image:url('assets/gerberas.jpg')"></div>
+            <div class="flower__body">
+              <h3>Gerberas</h3>
+              <p class="muted">Cor e presença. Ótimas para arranjos vivos e modernos.</p>
+            </div>
+          </article>
+
+          <article class="flower">
+            <div class="flower__img" style="background-image:url('assets/crisantemos.png')"></div>
+              <div class="flower__body">
+              <h3>Crisântemos</h3>
+              <p class="muted">Volume e durabilidade. Uma base excelente para composições.</p>
+            </div>
+          </article>
+
+          <article class="flower">
+            <div class="flower__img" style="background-image:url('assets/raridades.jpg')"></div>
+            <div class="flower__body">
+              <h3>Raridades sazonais</h3>
+              <p class="muted">Quando a época permite, entram “diferentes” — pede lista no WhatsApp.</p>
+            </div>
+          </article>
+        </div>
+
+    
+    </section>
+
+    <!-- GALERIA / CARROSSEL -->
+<section class="section section--soft" id="galeria">
+  <div class="container">
+    <div class="section__head">
+      <h2>Galeria</h2>
+      <p class="muted">Alguns momentos da nossa produção.</p>
+    </div>
+
+    <div class="carousel" aria-label="Galeria de imagens">
+      <div class="carousel__track">
+        <div class="carousel__slide" style="background-image:url('assets/jardim.jpg')"></div>
+        <div class="carousel__slide slide--ajustada" style="background-image:url('assets/festa_da_flor.jpg')"></div>
+        <div class="carousel__slide" style="background-image:url('assets/montra.png')"></div>
+        <div class="carousel__slide" style="background-image:url('assets/varias.png')"></div>
+        <div class="carousel__slide" style="background-image:url('assets/marl.png')"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTACTO -->
+    <section class="section section--soft" id="contacto">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contacto</h2>
+          <p class="muted">A via mais rápida é WhatsApp. O resto também funciona.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>📍 Morada</h3>
+            <p>
+              Estrada de Malpique n° 80, LanÇanda — Sarilhos Grandes
+            </p>
+            <div class="contact-row">
+              <a class="btn btn--primary" href="https://wa.me/351932894111" target="_blank" rel="noopener">WhatsApp: 932 894 111</a>
+              <a class="btn btn--ghost" href="tel:+351932894111">Ligar</a>
+            </div>
+
+            <div class="map-wrap" aria-label="Mapa">
+              <iframe
+                title="Mapa — Flor F"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=Estrada%20de%20Malpique%20n%C2%BA%2080%2C%20Lan%C3%A7anda%20-%20Sarilhos%20Grandes&output=embed">
+              </iframe>
+            </div>
+
+            <p class="muted tiny">
+              Nota: se a rua aparecer “aproximada”, trocamos depois pelo link exato do Google Maps.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Mensagem rápida</h3>
+            <p class="muted">Formulário simples (sem backend). Para receber por email, liga Formspree/EmailJS depois.</p>
+
+            <form id="contactForm" class="form">
+              <label>
+                Nome
+                <input name="nome" type="text" placeholder="O teu nome" autocomplete="name" required>
+              </label>
+
+              <label>
+                Telefone (opcional)
+                <input name="telefone" type="tel" placeholder="9xx xxx xxx" autocomplete="tel">
+              </label>
+
+              <label>
+                Mensagem
+                <textarea name="mensagem" rows="5" placeholder="O que precisas? Quantidades, datas, tipo de flor..." required></textarea>
+              </label>
+
+              <button class="btn btn--primary" type="submit">Enviar por WhatsApp</button>
+              <p class="muted tiny">Isto abre uma mensagem pré-preenchida no WhatsApp (não fica nada “preso” no site).</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <footer class="footer">
+  <div class="container footer__grid">
+
+    <!-- COL 1: Marca + social -->
+    <div class="footer__col">
+      <img class="footer__logo" src="assets/logo.png" alt="Flor F" />
+      <p class="footer__desc">
+        Floricultura, raridade e qualidade. Produção própria no Montijo.<br />
+        Também no <strong>MARL</strong>.
+      </p>
+
+      <div class="footer__social" aria-label="Redes sociais">
+        <a class="footer__icon" href="https://www.instagram.com/flor_fmontijo" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <!-- Se tiveres mais redes, duplica: -->
+        <!-- <a class="footer__icon" href="#" target="_blank" rel="noopener">FB</a> -->
+      </div>
+    </div>
+
+    <!-- COL 2: Contactos -->
+    <div class="footer__col">
+      <h4>Contacte-nos</h4>
+      <p><strong>Morada:</strong><br>Estrada de Malpique Nº 80, LanÃ§anda - Sarilhos Grandes</p>
+      <a href="tel:+351932894111"><strong>Telefone:</strong> 932 894 111</a>
+      <a href="https://wa.me/351932894111" target="_blank" rel="noopener"><strong>WhatsApp:</strong> Abrir conversa</a>
+    </div>
+
+    <!-- COL 3: Links úteis -->
+    <div class="footer__col">
+      <h4>Links úteis</h4>
+      <a href="#flores">Flores</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://www.instagram.com/flor_fmontijo" target="_blank" rel="noopener">Instagram</a>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <div class="footer__legal">
+      <a href="#" class="footer__legalLink">FAQs</a>
+      <span class="footer__sep">|</span>
+      <a href="#" class="footer__legalLink">Termos</a>
+      <span class="footer__sep">|</span>
+      <a href="#" class="footer__legalLink">Privacidade</a>
+      <span class="footer__sep">|</span>
+      <a href="#" class="footer__legalLink">Cookies</a>
+      <span class="footer__sep">|</span>
+      <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener">Livro de Reclamações</a>
+    </div>
+
+    <div class="footer__credit">
+      © <span id="year"></span> Flor F · Site por
+      <a href="#" target="_blank" rel="noopener">TEU_NOME_PRO</a>
+    </div>
+  </div>
+</footer>
+
+
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button id="lightboxClose" class="lightbox__close" aria-label="Fechar">✕</button>
+    <img id="lightboxImg" alt="Imagem ampliada" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
