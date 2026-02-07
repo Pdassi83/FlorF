@@ -413,7 +413,7 @@ code{background:rgba(255,255,255,.06); padding:.1rem .35rem; border-radius:8px}
 
 /* slide “banner” (não cortar texto) */
 .carousel__slide.slide--ajustada{
-  background-position: left center;
+  background-position: 30% center;
   background-size: contain;
   background-color: #b51f47;
 }
@@ -609,6 +609,13 @@ input:focus, textarea:focus{
 @media (max-width: 980px){
   .nav{display:none}
   .cards{grid-template-columns: repeat(2, 1fr)}
+}
+
+@media (max-width: 600px){
+  .carousel__slide.slide--ajustada{
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 @media (max-width: 900px){
