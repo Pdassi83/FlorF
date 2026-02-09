@@ -271,59 +271,70 @@
       </div>
     </section>
 
-   <footer class="footer">
-  <div class="container footer__grid">
+   <footer class="footer" aria-label="Rodapé">
+  <div class="container">
+    <div class="footer__grid">
+      <!-- COL 1: Marca -->
+      <div class="footer__col">
+        <img class="footer__logo" src="assets/logo.png" alt="Flor F" />
+        <p class="footer__desc">
+          Produção própria no Montijo. Flores de corte sempre frescas, variedade e raridades sazonais.
+          Também no <strong>MARL (Lisboa)</strong>.
+        </p>
 
-    <!-- COL 1: Marca + social -->
-    <div class="footer__col">
-      <img class="footer__logo" src="assets/logo.png" alt="Flor F" />
-      <p class="footer__desc">
-        Floricultura, raridade e qualidade. Produção própria no Montijo.<br />
-        Também no <strong>MARL</strong>.
-      </p>
+        <div class="footer__social" aria-label="Redes sociais">
+          <!-- troca os href pelos teus -->
+          <a class="footer__icon" href="#" aria-label="Instagram" title="Instagram">IG</a>
+          <a class="footer__icon" href="#" aria-label="Facebook" title="Facebook">FB</a>
+          <a class="footer__icon" href="#" aria-label="TikTok" title="TikTok">TT</a>
+        </div>
+      </div>
 
-      <div class="footer__social" aria-label="Redes sociais">
-        <a class="footer__icon" href="https://www.instagram.com/flor_fmontijo" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
-        <!-- Se tiveres mais redes, duplica: -->
-        <!-- <a class="footer__icon" href="#" target="_blank" rel="noopener">FB</a> -->
+      <!-- COL 2: Contactos -->
+      <div class="footer__col">
+        <h4>Contacte-nos</h4>
+        <p>
+          <strong>Morada:</strong><br />
+          Estrada do Seixalinho, Montijo
+        </p>
+        <p>
+          <strong>WhatsApp:</strong><br />
+          <a class="footer__link" href="https://wa.me/351932894111" target="_blank" rel="noopener">+351 932 894 111</a>
+        </p>
+        <p>
+          <strong>Email:</strong><br />
+          <a class="footer__link" href="mailto:geral@florf.pt">geral@florf.pt</a>
+        </p>
+      </div>
+
+      <!-- COL 3: Links -->
+      <div class="footer__col">
+        <h4>Links úteis</h4>
+        <a class="footer__link" href="#flores">Flores</a>
+        <a class="footer__link" href="#galeria">Galeria</a>
+        <a class="footer__link" href="#contacto">Contacto</a>
+
+        <div class="footer__cta">
+          <a class="btn btn--primary" href="https://wa.me/351932894111?text=lista%20%2B%20quantidades" target="_blank" rel="noopener">
+            Pedir lista no WhatsApp
+          </a>
+        </div>
       </div>
     </div>
 
-    <!-- COL 2: Contactos -->
-    <div class="footer__col">
-      <h4>Contacte-nos</h4>
-         <p><strong>Morada:</strong><br>Estrada de Malpique Nº 80, Lançanda - Sarilhos Grandes</p>
-      <a href="tel:+351932894111"><strong>Telefone:</strong> 932 894 111</a>
-      <a href="https://wa.me/351932894111" target="_blank" rel="noopener"><strong>WhatsApp:</strong> Abrir conversa</a>
-    </div>
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <a class="footer__legalLink" href="#" target="_blank" rel="noopener">Política de Privacidade</a>
+        <span class="footer__sep">|</span>
+        <a class="footer__legalLink" href="#" target="_blank" rel="noopener">Termos</a>
+        <span class="footer__sep">|</span>
+        <a class="footer__legalLink" href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener">Livro de Reclamações</a>
+      </div>
 
-    <!-- COL 3: Links úteis -->
-    <div class="footer__col">
-      <h4>Links úteis</h4>
-      <a href="#flores">Flores</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#contacto">Contacto</a>
-      <a href="https://www.instagram.com/flor_fmontijo" target="_blank" rel="noopener">Instagram</a>
-    </div>
-
-  </div>
-
-  <div class="container footer__bottom">
-    <div class="footer__legal">
-      <a href="#" class="footer__legalLink">FAQs</a>
-      <span class="footer__sep">|</span>
-      <a href="#" class="footer__legalLink">Termos</a>
-      <span class="footer__sep">|</span>
-      <a href="#" class="footer__legalLink">Privacidade</a>
-      <span class="footer__sep">|</span>
-      <a href="#" class="footer__legalLink">Cookies</a>
-      <span class="footer__sep">|</span>
-      <a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank" rel="noopener">Livro de Reclamações</a>
-    </div>
-
-    <div class="footer__credit">
-      © <span id="year"></span> Flor F · Site por
-      <a href="#" target="_blank" rel="noopener">TEU_NOME_PRO</a>
+      <div class="footer__credit">
+        © <span id="year"></span> Flor F · Feito por
+        <a href="#" title="SwizzleBee Studio">SwizzleBee Studio</a>
+      </div>
     </div>
   </div>
 </footer>

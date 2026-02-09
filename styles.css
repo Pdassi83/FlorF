@@ -468,51 +468,55 @@ input:focus, textarea:focus{
 
 .footer__logo{
   height: 44px;
-  width:auto;
+  width: auto;
   display:block;
-  margin-bottom:12px;
+  margin-bottom: 12px;
   filter: drop-shadow(0 10px 24px rgba(0,0,0,.35));
 }
 
 .footer__desc{
-  margin:0 0 14px;
+  margin: 0 0 14px;
   color: rgba(234,242,234,.75);
-  line-height:1.45;
+  line-height: 1.45;
   max-width: 46ch;
 }
 
 .footer__col h4{
-  margin:0 0 12px;
-  font-size:1.05rem;
-  font-weight:800;
-  letter-spacing:.2px;
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: .2px;
 }
+
 .footer__col p{
-  margin:0 0 10px;
+  margin: 0 0 10px;
   color: rgba(234,242,234,.70);
-  line-height:1.45;
+  line-height: 1.45;
 }
-.footer__col a{
+
+.footer__link{
   display:block;
-  margin-bottom:8px;
+  margin-bottom: 8px;
   color: rgba(234,242,234,.78);
 }
-.footer__col a:hover{color:#fff}
+.footer__link:hover{ color:#fff; }
+
+.footer__cta{ margin-top: 14px; }
 
 .footer__social{
   display:flex;
   gap:10px;
   flex-wrap:wrap;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 .footer__icon{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width:42px;
-  height:42px;
-  border-radius:999px;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
   border: 1px solid rgba(255,255,255,.12);
   background: rgba(255,255,255,.06);
   color:#fff;
@@ -525,6 +529,8 @@ input:focus, textarea:focus{
   border-color: rgba(255,255,255,.20);
   background: rgba(255,255,255,.08);
 }
+
+/* Bottom bar */
 .footer__bottom{
   margin-top: 26px;
   padding-top: 14px;
@@ -532,26 +538,49 @@ input:focus, textarea:focus{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:14px;
+  gap: 14px;
   color: rgba(234,242,234,.62);
-  font-size:.88rem;
+  font-size: .88rem;
 }
 
 .footer__legal{
   display:flex;
   flex-wrap:wrap;
-  gap:10px;
+  gap: 10px;
   align-items:center;
 }
 
-.footer__legalLink{ color: rgba(234,242,234,.68); }
-.footer__legalLink:hover{ color: var(--yellow); }
+.footer__legalLink{
+  color: rgba(234,242,234,.68);
+}
+.footer__legalLink:hover{
+  color: var(--yellow);
+}
 
 .footer__sep{ opacity:.35; }
 
-.footer__credit{ white-space: nowrap; }
-.footer__credit a{ color: rgba(234,242,234,.70); }
-.footer__credit a:hover{ color: var(--yellow); }
+.footer__credit{
+  white-space: nowrap;
+}
+.footer__credit a{
+  color: rgba(234,242,234,.70);
+}
+.footer__credit a:hover{
+  color: var(--yellow);
+}
+
+@media (max-width: 900px){
+  .footer__grid{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .footer__bottom{
+    flex-direction: column;
+    align-items:flex-start;
+  }
+  .footer__credit{ white-space: normal; }
+}
+
 
 /* =========================
    WhatsApp floating
