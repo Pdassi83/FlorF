@@ -669,3 +669,19 @@ input:focus, textarea:focus{
   .wa-float__text{display:none}
   .brand__logo{ height: 46px; } /* maior no canto no mobile */
 }
+/* =========================
+   Carousel – Mobile fix
+   ========================= */
+@media (max-width: 600px) {
+  .carousel__slide{
+    height: 260px;              /* mais baixo no mobile */
+    background-position: center;
+  }
+
+  /* slide tipo banner (com texto) */
+  .carousel__slide.slide--ajustada{
+    background-size: contain;   /* mostra tudo */
+    background-position: center;
+    background-color: #b51f47;  /* mantém fundo */
+  }
+}
