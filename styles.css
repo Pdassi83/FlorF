@@ -526,7 +526,10 @@ input:focus, textarea:focus{
   transform:translateY(-1px);
   background:rgba(255,255,255,.10);
   border-color:rgba(255,255,255,.22);
+  color: var(--yellow);
 }
+
+
 
 /* Bottom bar */
 .footer__bottom{
@@ -565,6 +568,12 @@ input:focus, textarea:focus{
 }
 .footer__credit a:hover{
   color: var(--yellow);
+}
+.footer__credit{
+  opacity:.75;
+}
+.footer__credit a{
+  font-weight:600;
 }
 
 @media (max-width: 900px){
