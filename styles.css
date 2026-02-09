@@ -507,27 +507,25 @@ input:focus, textarea:focus{
   display:flex;
   gap:10px;
   flex-wrap:wrap;
-  margin-top: 10px;
 }
 
 .footer__icon{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  width: 42px;
-  height: 42px;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.12);
-  background: rgba(255,255,255,.06);
+  width:42px;
+  height:42px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.06);
   color:#fff;
-  font-weight:800;
-  letter-spacing:.3px;
-  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+  transition:transform .12s ease, background .12s ease, border-color .12s ease;
 }
+
 .footer__icon:hover{
-  transform: translateY(-1px);
-  border-color: rgba(255,255,255,.20);
-  background: rgba(255,255,255,.08);
+  transform:translateY(-1px);
+  background:rgba(255,255,255,.10);
+  border-color:rgba(255,255,255,.22);
 }
 
 /* Bottom bar */
